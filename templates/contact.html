@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% block cssfile %}
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}"
+/>
+{% endblock %}
+
+{% block jsfile %}
+<script
+src="{{ url_for('static', filename='js/script.js') }}"
+defer
+></script>
+{% endblock %}
+
+{% block title %}Contact{% endblock %}
+
+{% block main_content %}
+<div class="contact">
+    <h1>Contact</h1>
+    <h3><a href = "mailto: subhranil2605@gmail.com">subhranil2605@gmail.com</a></h3>
+    <h3><a href = "tel:+916294769160">6294769160</a></h3>
+    <h3><a href = "https://github.com/subhranil2605">GitHub: subhranil2605</a></h3>
+    <h3><a href = "https://www.linkedin.com/in/subhranil2605/">LinkedIn: subhranil2605</a></h3>
+</div>
+
+{% endblock %}

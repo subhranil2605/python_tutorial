@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block cssfile %}
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}"
+/>
+{% endblock %}
+
+{% block jsfile %}
+<script
+src="{{ url_for('static', filename='js/script.js') }}"
+defer
+></script>
+{% endblock %}
+
+{% block title %}Learn Python{% endblock %}
+
+{% block main_content %}
+<h2 class="headline">Python</h2>
+<ul class="topics">
+    <li><a href="/fundamentals">Fundamentals</a></li>
+    <li><a href="/data_types">Data Types</a></li>
+    <li><a href="/strings">Strings</a></li>
+</ul>
+{% endblock %}

@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+
+{% block cssfile %}
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='css/style.css') }}"
+/>
+{% endblock %}
+
+{% block jsfile %}
+<script
+src="{{ url_for('static', filename='js/script.js') }}"
+defer
+></script>
+{% endblock %}
+
+{% block title %}About{% endblock %}
+
+{% block main_content %}
+<div class="section">
+    <div class="container">
+        <div class="content-section">
+            <div class="title">
+                <h1>About Me</h1>
+            </div>
+            <div class="content">
+                <h3>Hello, and welcome to my website! My name is Subhranil Sarkar</h3> 
+                <p>I'm a passionate Data Science student who loves to code in Python. 
+                I have been coding since 2018 and have developed a deep understanding of 
+                Python's capabilities and its immense potential in the world of data science. 
+                Throughout my journey, I have gained hands-on experience in Python programming 
+                and data analysis, and I'm excited to share my knowledge with you. 
+                My goal is to help you learn Python in a fun and interactive way so 
+                that you can apply it to your projects with ease. 
+                Join me on this journey, and together we'll explore the wonderful world of 
+                Python!</p>
+                <!-- <div class="button">
+                    <a href="">Read More</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
