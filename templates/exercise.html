@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block cssfile %}
+<link
+rel="stylesheet"
+href="{{ url_for('static', filename='css/exercise.css') }}"
+/>
+{% endblock %}
+
+{% block jsfile %}
+<script
+src="{{ url_for('static', filename='js/script.js') }}"
+defer
+></script>
+{% endblock %}
+
+{% block title %}Exercise{% endblock %}
+
+{% block main_content %}
+<div class="exercise-container">
+    <div class="sidebar">
+        <button type="submit" name="string" value="string">String Exercise</button>
+    </div>
+    <div class="questions">
+        {% for i in range(s) %}
+        <h4><div class="index">{{ i }}</div> {{ data[i] }}</h4>
+    {% endfor %}
+    </div>
+</div>
+{% endblock %}
