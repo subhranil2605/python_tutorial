@@ -8,6 +8,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  background: linear-gradient(to right, #00AAFF, #00FF6C);
 }
 
 .navbar {
@@ -94,19 +95,31 @@ body {
     display: flex;
   }
 
-  .topics {
+  .row {
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+
+
 }
 
 .headline {
   text-align: center;
-  color: rgb(113, 113, 216);
+  color: rgb(22, 68, 90);
+  font-size: 30px;
 }
 
 .topics {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
   gap: 10px;
 }
 
@@ -115,7 +128,7 @@ body {
   align-items: center;
   justify-content: center;
   list-style: none;
-  width: 200px;
+  width: 150px;
   aspect-ratio: 1;
   background: rgb(37, 36, 36);
   text-align: center;
@@ -128,7 +141,7 @@ body {
 
 .topics li a {
   text-decoration: none;
-  color: rgb(170, 170, 170);
+  color: white;
   font-size: 20px;
   font-weight: bold;
 }

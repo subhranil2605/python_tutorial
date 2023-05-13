@@ -24,7 +24,7 @@ def fundamentals():
     return render_template("fundamentals.html")
 
 
-@app.route("/data_types")
+@app.route("/data-types")
 def data_types():
     return render_template("data_types.html")
 
@@ -32,6 +32,17 @@ def data_types():
 @app.route("/strings")
 def strings():
     return render_template("strings.html")
+
+
+@app.route("/type-conversion")
+def type_conv():
+    return render_template("type_conversion.html")
+
+
+@app.route("/io")
+def io_basic():
+    return render_template("io.html")
+
 
 
 @app.route("/exercise", methods=["GET", "POST"])
