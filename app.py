@@ -1,5 +1,5 @@
-from flask import Flask, render_template, redirect, url_for
-
+from flask import Flask, render_template, redirect, url_for, request
+import os
 
 app = Flask(__name__)
 
@@ -32,6 +32,19 @@ def data_types():
 @app.route("/strings")
 def strings():
     return render_template("strings.html")
+
+
+@app.route("/exercise", methods=["GET", "POST"])
+def exercise():
+    # if 'string' in request.form:
+    #     button_value = request.form.get('string')
+    current_file = os.path.abspath(__file__) 
+    current_dir = os.path.dirname(current_file)
+    file_name = f"string_exercise.txt"
+    # print(current_dir)
+    with open(os.path.join(current_dir, "static/data", file_name)) as f_obj:
+        data = f_obj.readlines()
+    return render_template("exercise.html", data = data, s=len(data))
 
 
 if __name__ == "__main__":
