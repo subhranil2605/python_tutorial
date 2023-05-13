@@ -16223,12 +16223,133 @@ There are few escape sequences:</p>
 </div>
 
 </div>
+<div id="cell-id=bebfb486-742e-41bf-9f19-1ea3fd4f1953" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<h3 id="split()"><code>split()</code><a class="anchor-link" href="#split()">&#182;</a></h3><p>The <code>.split()</code> method is a built-in method in Python that allows you to split a string into a list of substrings based on a specified <code>delimiter</code>. The method takes one argument, which is the delimiter. The delimiter can be any character, or sequence of characters, that you want to use to split the string.</p>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=43a4d1cb-3b0b-44d3-836e-dd5c93522730" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Example 1: Split a string using whitespace as delimiter</span>
+<span class="n">sentence</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot;This is a sentence&quot;</span>
+<span class="n">words</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="n">sentence</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+
+<span class="c1"># Example 2: Split a string using a comma as delimiter</span>
+<span class="n">csv</span> <span class="o">=</span> <span class="s2">&quot;John,Doe,42&quot;</span>
+<span class="n">fields</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot;,&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">fields</span><span class="p">)</span>
+
+<span class="c1"># Example 3: Split a string with a maximum number of splits</span>
+<span class="n">phrase</span> <span class="o">=</span> <span class="s2">&quot;I have a cat and a dog&quot;</span>
+<span class="n">animals</span> <span class="o">=</span> <span class="n">phrase</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s2">&quot; &quot;</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span> <span class="c1"># the second argument decides max number of splits</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">animals</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>[&#39;This&#39;, &#39;is&#39;, &#39;a&#39;, &#39;sentence&#39;]
+[&#39;John&#39;, &#39;Doe&#39;, &#39;42&#39;]
+[&#39;I&#39;, &#39;have&#39;, &#39;a&#39;, &#39;cat and a dog&#39;]
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
+<div id="cell-id=fb9ee210-9fb1-466e-baaf-70459a99995a" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
+</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr />
+<h3 id="join()"><code>join()</code><a class="anchor-link" href="#join()">&#182;</a></h3><p>The <code>.join()</code> method is a built-in method in Python that allows you to join a list of strings into a single string using a specified delimiter. The method takes one argument, which is the delimiter. The delimiter can be any character, or sequence of characters, that you want to use to join the strings.</p>
+
+</div>
+</div>
+</div>
+</div><div id="cell-id=32f0cf9a-0590-43c5-821f-8ac6e8071010" class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
+<div class="jp-Cell-inputWrapper">
+<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
+</div>
+<div class="jp-InputArea jp-Cell-inputArea">
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
+     <div class="CodeMirror cm-s-jupyter">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># a list of words</span>
+<span class="n">words</span><span class="p">:</span> <span class="nb">list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;Hello,&quot;</span><span class="p">,</span> <span class="s2">&quot;Everyone!&quot;</span><span class="p">,</span> <span class="s2">&quot;This&quot;</span><span class="p">,</span> <span class="s2">&quot;Is&quot;</span><span class="p">,</span> <span class="s2">&quot;Subhranil&quot;</span><span class="p">]</span>
+
+<span class="c1"># into a single sentence</span>
+<span class="n">sentence</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="s2">&quot; &quot;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">words</span><span class="p">)</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="n">sentence</span><span class="p">)</span>
+</pre></div>
+
+     </div>
+</div>
+</div>
+</div>
+
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+
+
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+
+
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
+<pre>Hello, Everyone! This Is Subhranil
+</pre>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</div>
 <div id="cell-id=a0d0cb35-ee79-43ec-b7e8-ddc1074cbb5e" class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
+<hr />
 <h2 id="More-about-f-strings">More about f-strings<a class="anchor-link" href="#More-about-f-strings">&#182;</a></h2>
 </div>
 </div>
