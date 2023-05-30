@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>class_task.md</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__html"><h3 id="create-a-python-class-for-this-given-problem-and-create-instances-for-your-all-family-members">1. Create a Python <code>class</code> for this given problem and create instances for your all family members:</h3>
+<h4 id="uml">UML:</h4>
+<pre class=" language-mermaid"><svg id="mermaid-svg-epIMgHfDrUvj0fB4" width="100%" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" height="128" style="max-width: 151.8076171875px;" viewBox="-20 -20 151.8076171875 128"><style>#mermaid-svg-epIMgHfDrUvj0fB4{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;fill:#000000;}#mermaid-svg-epIMgHfDrUvj0fB4 .error-icon{fill:#552222;}#mermaid-svg-epIMgHfDrUvj0fB4 .error-text{fill:#552222;stroke:#552222;}#mermaid-svg-epIMgHfDrUvj0fB4 .edge-thickness-normal{stroke-width:2px;}#mermaid-svg-epIMgHfDrUvj0fB4 .edge-thickness-thick{stroke-width:3.5px;}#mermaid-svg-epIMgHfDrUvj0fB4 .edge-pattern-solid{stroke-dasharray:0;}#mermaid-svg-epIMgHfDrUvj0fB4 .edge-pattern-dashed{stroke-dasharray:3;}#mermaid-svg-epIMgHfDrUvj0fB4 .edge-pattern-dotted{stroke-dasharray:2;}#mermaid-svg-epIMgHfDrUvj0fB4 .marker{fill:#666;stroke:#666;}#mermaid-svg-epIMgHfDrUvj0fB4 .marker.cross{stroke:#666;}#mermaid-svg-epIMgHfDrUvj0fB4 svg{font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:16px;}#mermaid-svg-epIMgHfDrUvj0fB4 g.classGroup text{fill:#999;fill:#111111;stroke:none;font-family:"trebuchet ms",verdana,arial,sans-serif;font-size:10px;}#mermaid-svg-epIMgHfDrUvj0fB4 g.classGroup text .title{font-weight:bolder;}#mermaid-svg-epIMgHfDrUvj0fB4 .classTitle{font-weight:bolder;}#mermaid-svg-epIMgHfDrUvj0fB4 .node rect,#mermaid-svg-epIMgHfDrUvj0fB4 .node circle,#mermaid-svg-epIMgHfDrUvj0fB4 .node ellipse,#mermaid-svg-epIMgHfDrUvj0fB4 .node polygon,#mermaid-svg-epIMgHfDrUvj0fB4 .node path{fill:#eee;stroke:#999;stroke-width:1px;}#mermaid-svg-epIMgHfDrUvj0fB4 .divider{stroke:#999;stroke:1;}#mermaid-svg-epIMgHfDrUvj0fB4 g.clickable{cursor:pointer;}#mermaid-svg-epIMgHfDrUvj0fB4 g.classGroup rect{fill:#eee;stroke:#999;}#mermaid-svg-epIMgHfDrUvj0fB4 g.classGroup line{stroke:#999;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 .classLabel .box{stroke:none;stroke-width:0;fill:#eee;opacity:0.5;}#mermaid-svg-epIMgHfDrUvj0fB4 .classLabel .label{fill:#999;font-size:10px;}#mermaid-svg-epIMgHfDrUvj0fB4 .relation{stroke:#666;stroke-width:1;fill:none;}#mermaid-svg-epIMgHfDrUvj0fB4 .dashed-line{stroke-dasharray:3;}#mermaid-svg-epIMgHfDrUvj0fB4 #compositionStart,#mermaid-svg-epIMgHfDrUvj0fB4 .composition{fill:#666 !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 #compositionEnd,#mermaid-svg-epIMgHfDrUvj0fB4 .composition{fill:#666 !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 #dependencyStart,#mermaid-svg-epIMgHfDrUvj0fB4 .dependency{fill:#666 !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 #dependencyStart,#mermaid-svg-epIMgHfDrUvj0fB4 .dependency{fill:#666 !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 #extensionStart,#mermaid-svg-epIMgHfDrUvj0fB4 .extension{fill:#666 !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 #extensionEnd,#mermaid-svg-epIMgHfDrUvj0fB4 .extension{fill:#666 !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 #aggregationStart,#mermaid-svg-epIMgHfDrUvj0fB4 .aggregation{fill:#eee !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 #aggregationEnd,#mermaid-svg-epIMgHfDrUvj0fB4 .aggregation{fill:#eee !important;stroke:#666 !important;stroke-width:1;}#mermaid-svg-epIMgHfDrUvj0fB4 .edgeTerminals{font-size:11px;}#mermaid-svg-epIMgHfDrUvj0fB4:root{--mermaid-font-family:"trebuchet ms",verdana,arial,sans-serif;}#mermaid-svg-epIMgHfDrUvj0fB4 class{fill:apa;}</style><g></g><defs><marker id="extensionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 1,7 L18,13 V 1 Z"></path></marker></defs><defs><marker id="extensionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 1,1 V 13 L18,7 Z"></path></marker></defs><defs><marker id="compositionStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="compositionEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="aggregationEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyStart" class="extension" refX="0" refY="7" markerWidth="190" markerHeight="240" orient="auto"><path d="M 5,7 L9,13 L1,7 L9,1 Z"></path></marker></defs><defs><marker id="dependencyEnd" refX="19" refY="7" markerWidth="20" markerHeight="28" orient="auto"><path d="M 18,7 L9,13 L14,7 L9,1 Z"></path></marker></defs><g id="classid-BankAccount-164" class="classGroup" transform="translate(0,0 )"><rect x="0" y="0" width="111.8076171875" height="88" class=" "></rect><text y="15" x="0"><tspan class="title" x="25.05419921875">BankAccount</tspan></text><line x1="0" y1="21" y2="21" x2="111.8076171875"></line><text x="5" y="31" fill="white" class="classText"><tspan x="5">+str owner</tspan><tspan x="5" dy="10">+int balance</tspan></text><line x1="0" y1="47" y2="47" x2="111.8076171875"></line><text x="5" y="62" fill="white" class="classText"><tspan x="5">+deposit(amount)</tspan><tspan x="5" dy="10">+withdrawal(amount)</tspan><tspan x="5" dy="10">+get_balance()</tspan></text></g></svg></pre>
+<h4 id="description">Description:</h4>
+<ul>
+<li><code>BankAccount</code> is the name of the class.</li>
+<li>It has two <em>attributes</em> - <strong>owner</strong> and <strong>balance</strong>.
+<ul>
+<li><strong>owner: str</strong> =&gt; Name of the bank account holder.</li>
+<li><strong>balance: int</strong> =&gt; Current balance of the owner in the bank.</li>
+</ul>
+</li>
+<li>It has three <em>methods</em> - <strong>deposit</strong>, <strong>withdrawal</strong> and <strong>get_balance</strong>.
+<ul>
+<li><strong>deposit (amount: int)</strong> =&gt; Adds money to the bank account, and updates the <code>balance</code>.</li>
+<li><strong>withdrawal (amount: int)</strong> =&gt; Taking out the money from the bank account. Updates the <code>balance</code>.</li>
+<li><strong>get_balance ()</strong> =&gt; Prints out the current balance.</li>
+</ul>
+</li>
+</ul>
+<hr>
+<blockquote>
+<p>Future Idea:  Can we create another method which shows all the transactions?</p>
+</blockquote>
+</div>
+</body>
+
+</html>

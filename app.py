@@ -43,6 +43,10 @@ def type_conv():
 def io_basic():
     return render_template("io.html")
 
+@app.route("/class-task-1")
+def class_task():
+    return render_template("tasks/class_task.html")
+
 
 
 @app.route("/exercise", methods=["GET", "POST"])
